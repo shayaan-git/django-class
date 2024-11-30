@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django template</title>
+</head>
+<body>
+    <h1>Learning Django</h1>
+    <p>This is a line for paragraph</p>
+    <h2>These are my Jobs</h2>
+{% for job in jobs.all %}     <!-- We are creating a jinja template that django understands and creating this for loop.-->
+    <li> {{job.company}} | {{job.description}} </li>    <!--variables comes under curly braces-->
+{% endfor %}        <!--we have to end the template also. -->
+<hr>
+<footer>Contact me: mshayaan24@gmail.com</footer>
+
+<!-- this template will render our Jobs. -->
+<!-- Ab Jobs ko yahan HTML tak pohochana hai to uske liye views.py mei jaao  -->
+</body>
+</html>
